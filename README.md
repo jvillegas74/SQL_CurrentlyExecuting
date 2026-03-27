@@ -275,7 +275,7 @@ Running `@Server_Info = 1` returns a single-row summary including:
 | 7.00 | 2021-01-31 | Service account, Lock Pages in Memory, IFI, disk latency, AlwaysOn AG |
 | 7.18 | 2023-03-18 | Query Store info; job fixes |
 | 7.20 | 2023-11-02 | Bug fixes for @users and @errorlog |
-| Generic | 2024 | Removed all Interlink/MSCLink/OVA proprietary dependencies; portable edition |
+| Generic | 2024 | Removed all proprietary dependencies; portable edition |
 
 ---
 
