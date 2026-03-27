@@ -3,7 +3,7 @@
 A comprehensive SQL Server DBA monitoring and troubleshooting stored procedure. One command to see what your server is doing — right now.
 
 **Author:** Javier Villegas — [@jvillegas74](https://github.com/jvillegas74)  
-**Version:** 7.20 (Generic/Portable Edition)  
+**Version:** 8.00 (Generic/Portable Edition)  
 **Compatibility:** SQL Server 2012 and later
 
 ---
@@ -275,7 +275,7 @@ Running `@Server_Info = 1` returns a single-row summary including:
 | 7.00 | 2021-01-31 | Service account, Lock Pages in Memory, IFI, disk latency, AlwaysOn AG |
 | 7.18 | 2023-03-18 | Query Store info; job fixes |
 | 7.20 | 2023-11-02 | Bug fixes for @users and @errorlog |
-| Generic | 2024 | Removed all proprietary dependencies; portable edition |
+| 8.00 | 2026-04-01 | Removed all proprietary dependencies; portable edition |
 
 ---
 
