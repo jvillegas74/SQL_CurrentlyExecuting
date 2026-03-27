@@ -7,7 +7,7 @@
 --
 -- Author           : Javier Villegas  (jvillegas74 on GitHub)
 -- GitHub           : https://github.com/jvillegas74/SQL_CurrentlyExecuting
--- Version          : 7.20 (Generic/Portable edition - dependencies removed)
+-- Version          : 8.00 (Generic/Portable edition - dependencies removed)
 --
 -- Compatibility    : SQL Server 2012 and later (standard DMVs only, no proprietary DB dependencies)
 --
@@ -44,7 +44,7 @@
 -- v7.15 2023-03-17  Add MT machine name in @users
 -- v7.18 2023-03-18  Add Query Store info; fix @jobs
 -- v7.20 2023-11-02  Fix @users; fix @errorlog
--- [Generic] 2024    Removed all  proprietary database dependencies.
+-- v8.00 2026-04-01  Removed all  proprietary database dependencies.
 --                    @dbclog and @xevents flags disabled (they required proprietary databases).
 --                   
 --                    @errorlog now uses a local temp table instead of proprietary database.
@@ -160,10 +160,11 @@ DECLARE @ExitCondition bit = 0
 IF @version = 1
 BEGIN
     DECLARE @VERSION_TABLE TABLE (ID int, [Value] varchar(100))
-    INSERT INTO @VERSION_TABLE (ID, [Value]) VALUES (1, 'Version 7.20 (Generic/Portable Edition)')
+    INSERT INTO @VERSION_TABLE (ID, [Value]) VALUES (1, 'Version 8.00 (Generic/Portable Edition)')
     INSERT INTO @VERSION_TABLE (ID, [Value]) VALUES (2, 'By Javier Villegas | github.com/jvillegas74')
-    INSERT INTO @VERSION_TABLE (ID, [Value]) VALUES (3, 'Running on ' + @@SERVERNAME)
-    INSERT INTO @VERSION_TABLE (ID, [Value]) VALUES (4, 'At ' + CAST(GETDATE() AS varchar(50)))
+    INSERT INTO @VERSION_TABLE (ID, [Value]) VALUES (3, 'LinkedIn https://linkedin.com/in/javiervillegas/')
+    INSERT INTO @VERSION_TABLE (ID, [Value]) VALUES (4, 'Running on ' + @@SERVERNAME)
+    INSERT INTO @VERSION_TABLE (ID, [Value]) VALUES (5, 'At ' + CAST(GETDATE() AS varchar(50)))
     SELECT [Value] FROM @VERSION_TABLE ORDER BY ID
     RETURN
 END
